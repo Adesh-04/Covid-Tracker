@@ -1,11 +1,10 @@
-//  https://api.covid19api.com/summary
 
 fetch('https://api.covid19api.com/summary').then(rawdata => rawdata.json()).then(data => {
 		 console.log(data)
-	let covidData = data.Global;
+	let covidData = data.Global;  						// saving api data 
 	console.log(covidData);
 
-	document.getElementById("newCases").innerText = "+" + covidData.NewConfirmed;
+	document.getElementById("newCases").innerText = "+" + covidData.NewConfirmed;     //inserting api data into html
 	document.getElementById("recoveredCases").innerText =  covidData.NewRecovered;
 	document.getElementById("newDeaths").innerText = "+" +  covidData.NewDeaths;
 	document.getElementById("totalCases").innerText =  covidData.TotalConfirmed;
@@ -16,15 +15,3 @@ fetch('https://api.covid19api.com/summary').then(rawdata => rawdata.json()).then
 	
 	
 });
-
-
-
-// function getsomeData(){
-// 	return data;
-
-// }
-
-// const getSomeData = () => {
-
-// 	return data;
-// }
