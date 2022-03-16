@@ -10,5 +10,5 @@
  
 # tech-stack :
  
- 1.HTML and CsS
- 2.Javascript
+ 1. HTML and CSS
+ 2. Javascript
